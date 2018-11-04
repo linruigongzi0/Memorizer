@@ -14,6 +14,7 @@
 		0DE6BE1B218E9F20004D86C4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DE6BE19218E9F20004D86C4 /* LaunchScreen.storyboard */; };
 		0DE6BE1E218E9F20004D86C4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DE6BE1D218E9F20004D86C4 /* main.m */; };
 		0DE6BE28218E9F20004D86C4 /* MemorizerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DE6BE27218E9F20004D86C4 /* MemorizerUITests.m */; };
+		A98FE0556106361F7FE238E6 /* libPods-Memorizer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DB49AB62E9C8BDBEB5ED2C32 /* libPods-Memorizer.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,9 @@
 		0DE6BE23218E9F20004D86C4 /* MemorizerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MemorizerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DE6BE27218E9F20004D86C4 /* MemorizerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MemorizerUITests.m; sourceTree = "<group>"; };
 		0DE6BE29218E9F20004D86C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5C1D620BD4D74F103B066FB1 /* Pods-Memorizer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Memorizer.release.xcconfig"; path = "Pods/Target Support Files/Pods-Memorizer/Pods-Memorizer.release.xcconfig"; sourceTree = "<group>"; };
+		B9C5147E7F11DB4A659EFAC2 /* Pods-Memorizer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Memorizer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Memorizer/Pods-Memorizer.debug.xcconfig"; sourceTree = "<group>"; };
+		DB49AB62E9C8BDBEB5ED2C32 /* libPods-Memorizer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Memorizer.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A98FE0556106361F7FE238E6 /* libPods-Memorizer.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +71,8 @@
 				0DE6BE0D218E9F1F004D86C4 /* Memorizer */,
 				0DE6BE26218E9F20004D86C4 /* MemorizerUITests */,
 				0DE6BE0C218E9F1F004D86C4 /* Products */,
+				B5D86BA67F806F9D8567B7B9 /* Pods */,
+				8E99A5B784464B55C1B3F9D3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,6 +110,23 @@
 			path = MemorizerUITests;
 			sourceTree = "<group>";
 		};
+		8E99A5B784464B55C1B3F9D3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DB49AB62E9C8BDBEB5ED2C32 /* libPods-Memorizer.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B5D86BA67F806F9D8567B7B9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B9C5147E7F11DB4A659EFAC2 /* Pods-Memorizer.debug.xcconfig */,
+				5C1D620BD4D74F103B066FB1 /* Pods-Memorizer.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -110,6 +134,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0DE6BE2C218E9F20004D86C4 /* Build configuration list for PBXNativeTarget "Memorizer" */;
 			buildPhases = (
+				332995E52E5861704D96C8FD /* [CP] Check Pods Manifest.lock */,
 				0DE6BE07218E9F1F004D86C4 /* Sources */,
 				0DE6BE08218E9F1F004D86C4 /* Frameworks */,
 				0DE6BE09218E9F1F004D86C4 /* Resources */,
@@ -198,6 +223,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		332995E52E5861704D96C8FD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Memorizer-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0DE6BE07218E9F1F004D86C4 /* Sources */ = {
@@ -362,15 +408,13 @@
 		};
 		0DE6BE2D218E9F20004D86C4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B9C5147E7F11DB4A659EFAC2 /* Pods-Memorizer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Memorizer/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.reason.technology.Memorizer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -379,15 +423,13 @@
 		};
 		0DE6BE2E218E9F20004D86C4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C1D620BD4D74F103B066FB1 /* Pods-Memorizer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Memorizer/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.reason.technology.Memorizer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -399,11 +441,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MemorizerUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.reason.technology.MemorizerUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -416,11 +454,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MemorizerUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.reason.technology.MemorizerUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
