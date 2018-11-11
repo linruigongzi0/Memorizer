@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		0DE032C821982EFA00527D62 /* MRTicketViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DE032C721982EFA00527D62 /* MRTicketViewController.m */; };
 		0DE032CB2198304F00527D62 /* MRTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DE032CA2198304F00527D62 /* MRTabBarController.m */; };
-		0DE032CE2198464500527D62 /* MineMyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DE032CD2198464500527D62 /* MineMyViewController.m */; };
+		0DE032CE2198464500527D62 /* MRMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DE032CD2198464500527D62 /* MRMineViewController.m */; };
 		0DE032D3219849D200527D62 /* MRMineProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DE032D2219849D200527D62 /* MRMineProfileViewController.m */; };
 		0DE6BE10218E9F1F004D86C4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DE6BE0F218E9F1F004D86C4 /* AppDelegate.m */; };
 		0DE6BE13218E9F1F004D86C4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DE6BE12218E9F1F004D86C4 /* ViewController.m */; };
@@ -36,8 +36,8 @@
 		0DE032C721982EFA00527D62 /* MRTicketViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MRTicketViewController.m; sourceTree = "<group>"; };
 		0DE032C92198304F00527D62 /* MRTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MRTabBarController.h; sourceTree = "<group>"; };
 		0DE032CA2198304F00527D62 /* MRTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MRTabBarController.m; sourceTree = "<group>"; };
-		0DE032CC2198464500527D62 /* MineMyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MineMyViewController.h; sourceTree = "<group>"; };
-		0DE032CD2198464500527D62 /* MineMyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MineMyViewController.m; sourceTree = "<group>"; };
+		0DE032CC2198464500527D62 /* MRMineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MRMineViewController.h; sourceTree = "<group>"; };
+		0DE032CD2198464500527D62 /* MRMineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MRMineViewController.m; sourceTree = "<group>"; };
 		0DE032D1219849D200527D62 /* MRMineProfileViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MRMineProfileViewController.h; sourceTree = "<group>"; };
 		0DE032D2219849D200527D62 /* MRMineProfileViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MRMineProfileViewController.m; sourceTree = "<group>"; };
 		0DE6BE0B218E9F1F004D86C4 /* Memorizer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Memorizer.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -100,8 +100,8 @@
 			isa = PBXGroup;
 			children = (
 				0DE032D02198491300527D62 /* Views */,
-				0DE032CC2198464500527D62 /* MineMyViewController.h */,
-				0DE032CD2198464500527D62 /* MineMyViewController.m */,
+				0DE032CC2198464500527D62 /* MRMineViewController.h */,
+				0DE032CD2198464500527D62 /* MRMineViewController.m */,
 			);
 			path = Mine;
 			sourceTree = "<group>";
@@ -305,7 +305,7 @@
 				0DE6BE13218E9F1F004D86C4 /* ViewController.m in Sources */,
 				0DE032C821982EFA00527D62 /* MRTicketViewController.m in Sources */,
 				0DE6BE1E218E9F20004D86C4 /* main.m in Sources */,
-				0DE032CE2198464500527D62 /* MineMyViewController.m in Sources */,
+				0DE032CE2198464500527D62 /* MRMineViewController.m in Sources */,
 				0DE032CB2198304F00527D62 /* MRTabBarController.m in Sources */,
 				0DE032D3219849D200527D62 /* MRMineProfileViewController.m in Sources */,
 				0DE6BE10218E9F1F004D86C4 /* AppDelegate.m in Sources */,

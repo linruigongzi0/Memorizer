@@ -6,13 +6,13 @@
 //  Copyright © 2018 Reason Lee. All rights reserved.
 //
 
-#import "MineMyViewController.h"
+#import "MRMineViewController.h"
 
-@interface MineMyViewController ()
+@interface MRMineViewController ()
 
 @end
 
-@implementation MineMyViewController
+@implementation MRMineViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

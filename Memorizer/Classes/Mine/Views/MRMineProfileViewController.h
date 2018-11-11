@@ -10,7 +10,11 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface MRMineProfileViewController : UIViewController
+@interface MRMineProfileViewController : UIView
+
+@property (strong, nonatomic) UILabel* nameLabel;
+@property (strong, nonatomic) UILabel* locationLabel;
+@property (strong, nonatomic) UIImageView* profileImage;
 
 @end
 
