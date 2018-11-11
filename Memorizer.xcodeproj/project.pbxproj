@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0DE032C821982EFA00527D62 /* MRTicketViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DE032C721982EFA00527D62 /* MRTicketViewController.m */; };
+		0DE032CB2198304F00527D62 /* MRTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DE032CA2198304F00527D62 /* MRTabBarController.m */; };
+		0DE032CE2198464500527D62 /* MineMyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DE032CD2198464500527D62 /* MineMyViewController.m */; };
+		0DE032D3219849D200527D62 /* MRMineProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DE032D2219849D200527D62 /* MRMineProfileViewController.m */; };
 		0DE6BE10218E9F1F004D86C4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DE6BE0F218E9F1F004D86C4 /* AppDelegate.m */; };
 		0DE6BE13218E9F1F004D86C4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DE6BE12218E9F1F004D86C4 /* ViewController.m */; };
 		0DE6BE16218E9F1F004D86C4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DE6BE14218E9F1F004D86C4 /* Main.storyboard */; };
@@ -28,6 +32,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0DE032C621982EFA00527D62 /* MRTicketViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MRTicketViewController.h; sourceTree = "<group>"; };
+		0DE032C721982EFA00527D62 /* MRTicketViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MRTicketViewController.m; sourceTree = "<group>"; };
+		0DE032C92198304F00527D62 /* MRTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MRTabBarController.h; sourceTree = "<group>"; };
+		0DE032CA2198304F00527D62 /* MRTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MRTabBarController.m; sourceTree = "<group>"; };
+		0DE032CC2198464500527D62 /* MineMyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MineMyViewController.h; sourceTree = "<group>"; };
+		0DE032CD2198464500527D62 /* MineMyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MineMyViewController.m; sourceTree = "<group>"; };
+		0DE032D1219849D200527D62 /* MRMineProfileViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MRMineProfileViewController.h; sourceTree = "<group>"; };
+		0DE032D2219849D200527D62 /* MRMineProfileViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MRMineProfileViewController.m; sourceTree = "<group>"; };
 		0DE6BE0B218E9F1F004D86C4 /* Memorizer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Memorizer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DE6BE0E218E9F1F004D86C4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0DE6BE0F218E9F1F004D86C4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -65,6 +77,44 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0DE032C421982E6200527D62 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				0DE032CF219848F100527D62 /* Mine */,
+				0DE032C621982EFA00527D62 /* MRTicketViewController.h */,
+				0DE032C721982EFA00527D62 /* MRTicketViewController.m */,
+				0DE032C92198304F00527D62 /* MRTabBarController.h */,
+				0DE032CA2198304F00527D62 /* MRTabBarController.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		0DE032C521982E7000527D62 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0DE032CF219848F100527D62 /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				0DE032D02198491300527D62 /* Views */,
+				0DE032CC2198464500527D62 /* MineMyViewController.h */,
+				0DE032CD2198464500527D62 /* MineMyViewController.m */,
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
+		0DE032D02198491300527D62 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0DE032D1219849D200527D62 /* MRMineProfileViewController.h */,
+				0DE032D2219849D200527D62 /* MRMineProfileViewController.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		0DE6BE02218E9F1F004D86C4 = {
 			isa = PBXGroup;
 			children = (
@@ -88,6 +138,8 @@
 		0DE6BE0D218E9F1F004D86C4 /* Memorizer */ = {
 			isa = PBXGroup;
 			children = (
+				0DE032C421982E6200527D62 /* Classes */,
+				0DE032C521982E7000527D62 /* Supporting Files */,
 				0DE6BE0E218E9F1F004D86C4 /* AppDelegate.h */,
 				0DE6BE0F218E9F1F004D86C4 /* AppDelegate.m */,
 				0DE6BE11218E9F1F004D86C4 /* ViewController.h */,
@@ -251,7 +303,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				0DE6BE13218E9F1F004D86C4 /* ViewController.m in Sources */,
+				0DE032C821982EFA00527D62 /* MRTicketViewController.m in Sources */,
 				0DE6BE1E218E9F20004D86C4 /* main.m in Sources */,
+				0DE032CE2198464500527D62 /* MineMyViewController.m in Sources */,
+				0DE032CB2198304F00527D62 /* MRTabBarController.m in Sources */,
+				0DE032D3219849D200527D62 /* MRMineProfileViewController.m in Sources */,
 				0DE6BE10218E9F1F004D86C4 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -414,7 +470,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Memorizer/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.reason.technology.Memorizer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -429,7 +488,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Memorizer/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.reason.technology.Memorizer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -441,7 +503,11 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MemorizerUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.reason.technology.MemorizerUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -454,7 +520,11 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MemorizerUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.reason.technology.MemorizerUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";

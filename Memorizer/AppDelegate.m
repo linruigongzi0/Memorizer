@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "Classes/MRTicketViewController.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +18,26 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    MRTicketViewController *homeVC = [[MRTicketViewController alloc] init];
+    homeVC.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"Home" image:nil tag:0];
+    
+    UIViewController *tikcetVC = [[UIViewController alloc] init];
+    tikcetVC.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"Ticket" image:nil tag:1];
+    
+    UIViewController *statisticsVC = [[UIViewController alloc] init];
+    statisticsVC.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"Statistics" image:nil tag:2];
+    
+    UIViewController *myVC = [[UIViewController alloc] init];
+    myVC.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"My" image:nil tag:3];
+    
+    UITabBarController *mainTab = [[UITabBarController alloc] init];
+    
+    mainTab.viewControllers = @[homeVC, tikcetVC,statisticsVC,myVC];
+    self.window.rootViewController = mainTab;
+    self.window.frame = [[UIScreen mainScreen] bounds];
+    [self.window makeKeyAndVisible];
+    
     return YES;
 }
 
